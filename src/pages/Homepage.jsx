@@ -8,7 +8,7 @@ import ContactForm from "../components/ContactForm"
 import Footer from "../components/Footer"
 import { useRef, useState, useEffect } from "react"
 import FlipText from "../components/FlipText"
-import Colorway from "../components/ColorWay"
+import Colorway from "../components/Colorway"
 import EmailBox from "../components/EmailBox"
 
 function Homepage() {
