@@ -359,7 +359,7 @@ function AboutMe() {
                     
                     <div className="cv_btn_container">
                         <a
-                            href="https://raw.githubusercontent.com/Duarte-reis/portfolio/main/portfolio/CV.pdf"
+                            href="https://raw.githubusercontent.com/Duarte-reis/portfolio/main/CV.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

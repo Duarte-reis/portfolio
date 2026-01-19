@@ -134,7 +134,7 @@ function Homepage() {
                                             <NavBtn text="See my journey" />
                                         </Link>
                                         <a
-                                            href="https://raw.githubusercontent.com/Duarte-reis/myportfolio/main/myportfolio/CV.pdf"
+                                            href="https://raw.githubusercontent.com/Duarte-reis/portfolio/main/CV.pdf"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
