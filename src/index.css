@@ -170,7 +170,7 @@ a {
 
 .nav_menu_container {
     position: fixed;
-    top: 5%;
+    top: 15%;
     left: 3%;
     z-index: 1;
     background-color: var(--deep-black-2-low-opacity);
@@ -2818,31 +2818,29 @@ textarea {
     /* ---- Homepage ---- */
 
     .cover {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
-        gap: 0px;
-        width: 100%;
-        padding-inline: 112px;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 0px;
     }
 
     .presentation_container {
-        display: contents;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        width: 100%;
     }
 
     .picture_resume_container {
         grid-column: 2;
+        justify-self: center;
     }
 
     .pages_links {
         grid-column: 3;
+        max-width: max-content;
         justify-self: flex-start;
-        align-items: flex-start;
-        margin-left: 0px;
-    }
-
-    .homepage_wrap {
-        padding-inline: 0px;
-        display: flex;
+        margin: 0px;
     }
 
     .side_bar {
@@ -2851,15 +2849,17 @@ textarea {
 
     .about_me_container {
         padding-inline: 196px;
-        padding-right: 312px;        
+        padding-right: 312px;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
     }
 
     .homepage_content {
+        margin-top: 0px;
         margin-left: 0px;
-        gap: 212px;
-        margin-top: 172px;
         max-width: 100%;
-        display: grid;
+        gap: 0px;
     }
 
     .homepage_container {
@@ -2874,8 +2874,11 @@ textarea {
         cursor: pointer;
     }
 
-    .latest_project_container {
+    .homepage_content .latest_project_container {
         padding-inline: 196px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .latest_project_resume p {
@@ -2921,6 +2924,8 @@ textarea {
     .contact_container {
         padding-inline: 196px;
         padding-right: 312px;
+        display: flex;
+        justify-content: center;    
     }
 
     .contact_container {
@@ -2937,7 +2942,13 @@ textarea {
     #email_social .banner {
         position: absolute;
     }
-    
+
+    .about_me_container,
+    .homepage_content .latest_project_container,
+    .contact_container {
+        margin-block: 148px;
+    }
+
     /* ---- About me ---- */
 
     .about_me_page_wrap {
@@ -3021,30 +3032,7 @@ textarea {
     .project_content .tag {
         margin-block: 48px;
     }
-}
 
-@media (min-width: 1512px) {
-
-    .email_box_container {
-        left: 1056px;
-    }
-
-    .homepage_content {
-        gap: 212px
-    }
-
-    .about_me_container,
-    .contact_content {
-        padding-right: 328px;
-    }
-
-    .picture_resume_container img {
-        width: px
-    }
-
-    .footer_container {
-        margin-top: 296px;
-    }
 }
 
 @media (min-width: 1728px) {
@@ -3122,7 +3110,13 @@ textarea {
         width: 600px;
     }
 
-/* ---- About me ---- */
+    .about_me_container,
+    .homepage_content .latest_project_container,
+    .contact_container {
+        margin-block: 196px;
+    }
+
+    /* ---- About me ---- */
 
     .about_me_page_content {
         padding-inline: 112px;
@@ -3187,6 +3181,7 @@ textarea {
 
     .about_me_container,
     .about_me_page_content,
+    .homepage_content .latest_project_container,
     .latest_project_container,
     .contact_container,
     .projects_title,
@@ -3212,9 +3207,9 @@ textarea {
 }
 
 @media (min-width: 2128px) {
-    
+ 
     .email_box_container {
-        left: 1656px;
+        left: 2096px;
     }
 
     #email_social .banner {
@@ -3233,10 +3228,6 @@ textarea {
     .picture_resume_container img{
         width: 100%;
     }
-    
-    .pages_links {
-        max-width: 620px;
-    }
 
     .features_container p {
         font-size: 150px;
@@ -3248,9 +3239,14 @@ textarea {
         width: 700px;
     }
 
-    .about_me_container,
-    .contact_content {
+    .about_me_container {
         padding-right: 596px;
+    }
+
+    .about_me_container,
+    .homepage_content .latest_project_container,
+    .contact_container {
+        margin-block: 228px;
     }
 
     /* ---- About me ---- */
