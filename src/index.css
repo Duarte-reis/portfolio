@@ -170,8 +170,8 @@ a {
 
 .nav_menu_container {
     position: fixed;
-    top: 15%;
-    left: 3%;
+    top: 64px;
+    left: 16px;
     z-index: 1;
     background-color: var(--deep-black-2-low-opacity);
     border-radius: 10px;
@@ -2004,6 +2004,11 @@ textarea {
 
 @media (min-width: 768px) {
 
+    .nav_menu_container {
+        top: 64px;
+        left: 34px;
+    }
+
     /* ---- Typography ---- */
 
     h1 {
@@ -2563,6 +2568,11 @@ textarea {
 
 @media (min-width: 1024px) {
 
+    .nav_menu_container {
+        top: 80px;
+        left: 40px;
+    }
+
     .email_box_container {
         left: 628px;
     }
@@ -2755,6 +2765,11 @@ textarea {
 }
 
 @media (min-width: 1440px) {
+
+    .nav_menu_container {
+        top: 80px;
+        left: 48px;
+    }
 
     .email_box_container {
         left: 1028px;
@@ -3036,6 +3051,11 @@ textarea {
 }
 
 @media (min-width: 1728px) {
+
+    .nav_menu_container {
+        top: 80px;
+        left: 88px;
+    }
 
     .email_box_container {
         left: 1248px;
