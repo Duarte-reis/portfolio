@@ -1078,7 +1078,7 @@ textarea {
 
 .homepage_wrap {
     display: flex;
-    max-width: 2128px;
+    max-width: 100%;
     align-self: center;
 }
 
@@ -2009,6 +2009,20 @@ textarea {
         left: 34px;
     }
 
+    .nav_menu_container  .email_box_container  {
+        width: fit-content;
+    }
+
+    .email_box_container {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 48px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        position: fixed;
+    }
+
     /* ---- Typography ---- */
 
     h1 {
@@ -2456,7 +2470,7 @@ textarea {
     }
 
 
-/* ---- About Me ---- */
+    /* ---- About Me ---- */
 
     .about_me_page_wrap {
         padding-inline: 48px;
@@ -2499,7 +2513,7 @@ textarea {
         width: 100%;
     }
 
-/* ---- Projects ---- */
+    /* ---- Projects ---- */
 
     .projects_container {
         padding: 0px;
@@ -2530,7 +2544,11 @@ textarea {
         margin-bottom: 24px;
     }
 
-/* ---- Travel Planner ---- */
+    /* ---- Travel Planner ---- */
+
+    .travel_planner_content .article_title_container {
+        padding-left: 0px;
+    }
 
     .travel_planner_container {
         padding: 0px;
@@ -2566,15 +2584,17 @@ textarea {
         display: inline;
     }
 
+    .travel_planner_container .footer_container, 
+    .about_me_page_container .footer_container,
+    .projects_container .footer_container {
+        margin-top: 296px;
+    }
+
 @media (min-width: 1024px) {
 
     .nav_menu_container {
         top: 80px;
         left: 40px;
-    }
-
-    .email_box_container {
-        left: 628px;
     }
 
     .cover {
@@ -2696,6 +2716,15 @@ textarea {
         padding-inline: 0px;
     }
 
+    .travel_planner_container .problem_solution_container, 
+    .travel_planner_container .prototype_container {
+        padding-inline: 64px;
+    }
+
+    .travel_planner_container .tag {
+        margin-left: 64px;
+    }
+
     .travel_planner_wrap {
         margin-inline: 0px;
         padding-inline: 0px;
@@ -2716,7 +2745,11 @@ textarea {
 @media (min-width: 1280px) {
 
     .email_box_container {
-        left: 828px;
+        display: flex;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        position: fixed;
     }
 
     .email_box_container .nav_btn p {
@@ -2772,7 +2805,12 @@ textarea {
     }
 
     .email_box_container {
-        left: 1028px;
+        display: flex;
+        top: 80px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        position: fixed;
     }
 
     .logo_box img {
@@ -2966,6 +3004,10 @@ textarea {
 
     /* ---- About me ---- */
 
+    .about_me_page_container .cv_btn_container {
+        margin-top: 96px;
+    }
+
     .about_me_page_wrap {
         padding-inline: 0px;
         margin-inline: 0px;
@@ -2974,6 +3016,7 @@ textarea {
     .about_me_page_container {
         padding-inline: 0px;
         margin-inline: 0px;
+        margin-top: 0px;
     }
 
     .about_me_page_content .article_title_container,
@@ -2985,7 +3028,8 @@ textarea {
         margin-left: 0px;
         gap: 112px;
         max-width: 100%;
-        margin-top: 88px;
+        margin-top: 116px;
+        padding-inline: 96px;
     }
 
     .act_storyline {
@@ -3000,12 +3044,18 @@ textarea {
 
     .projects_wrap {
         padding-inline: 0px;
+
     }
 
     .projects_wrap .projects_content {
         gap: 80px;
         max-width: 100%;
-        padding-inline: 96px;
+        padding-inline: 120px;
+    }
+
+    .projects_content {
+        margin-top: 128px;
+        height: 100vh;
     }
 
     /* ---- Travel Planner ---- */
@@ -3019,8 +3069,21 @@ textarea {
         margin-left: 0px;
         gap: 80px;
         display: flex;
-        padding-inline: 96px;
-        
+        padding-inline: 120px;
+        margin-top: 128px;
+    }
+
+    .problem_solution_container,
+    .travel_planner_content .prototype_container {
+        padding-inline: 64px;
+    }
+
+    .travel_planner_content .tag {
+        margin-left: 64px;
+    }
+
+    .travel_planner_container .footer_container {
+        margin-top: 496px;
     }
 
     .about_project {
@@ -3058,7 +3121,12 @@ textarea {
     }
 
     .email_box_container {
-        left: 1248px;
+        display: flex;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        position: fixed;
+        padding-right: 96px;
     }
 
     .img_bg img {
@@ -3078,10 +3146,6 @@ textarea {
         padding-inline: 96px;
     }
 
-    .pages_links {
-        max-width: 494px;
-    }
-
     .picture_resume_container {
         width: 304px
     }
@@ -3095,8 +3159,9 @@ textarea {
     }
 
     .cover {
-        padding-inline: 212px; 
+        padding-inline: 0px;
     }
+
 
     .side_bar {
         margin-left: 98px;
@@ -3120,14 +3185,10 @@ textarea {
     .features_container {
         width: 600px;
     }
-
+    
     .features_container p {
         font-size: 130px;
         line-height: 98px;
-    }
-
-    .skills_container {
-        width: 600px;
     }
 
     .about_me_container,
@@ -3170,14 +3231,19 @@ textarea {
     .footer_container {
         margin-top: 328px;
     }
+
+    .problem_solution_container {
+        margin-block: 112px;
+        gap: 112px;
+    }
+
+    .travel_planner_container .prototype_container {
+        margin-block: 112px;
+    }
 }
 
 @media (min-width: 1920px) {
     
-    .email_box_container {
-        left: 1428px;
-    }
-
     #menu_socials_container .email_box_container .banner {
         left: 50%;
         min-width: 216px;
@@ -3199,19 +3265,21 @@ textarea {
         font-size: 28px;
     }
 
-    .about_me_container,
-    .about_me_page_content,
-    .homepage_content .latest_project_container,
-    .latest_project_container,
-    .contact_container,
-    .projects_title,
-    .travel_planner_content {
-        padding-inline: 266px;
+    .homepage_content {
+        padding-inline: 104px;
     }
 
-    .about_me_container,
-    .contact_container {
-        padding-right: 528px
+    .about_me_page_content {
+        padding-inline: 128px;
+    }
+
+    .projects_container .projects_content .latest_project_container, 
+    .projects_container .projects_content .projects_title {
+        padding-inline: 80px;
+    }
+
+    .homepage_content .about_me_container {
+        padding-right: 228px;
     }
 
     .features_container p {
@@ -3224,13 +3292,20 @@ textarea {
         width: 700px;
     }
 
+    .travel_planner_content .project_content, 
+    .travel_planner_content .article_title_container, 
+    .travel_planner_content .problem_solution_container,
+    .travel_planner_content .prototype_container {
+        padding-inline: 80px;
+    }
+
+    .travel_planner_container .tag {
+        margin-left: 80px;
+    }
+
 }
 
 @media (min-width: 2128px) {
- 
-    .email_box_container {
-        left: 2096px;
-    }
 
     #email_social .banner {
         position: absolute;
@@ -3272,7 +3347,31 @@ textarea {
     /* ---- About me ---- */
 
     .about_me_page_content {
-        padding-inline: 112px;
+        padding-inline: 204px;
+    }
+
+    .about_me_page_container .footer_container {
+        margin-top: 412px;
+    }
+
+    /* ---- Projects ---- */
+
+    .projects_container .projects_content .latest_project_container, 
+    .projects_container .projects_content .projects_title {
+        padding-inline: 156px;
+    }
+
+    /* ---- Travel Planner ---- */
+
+    .travel_planner_content .article_title_container, 
+    .travel_planner_content .project_content, 
+    .travel_planner_content .problem_solution_container, 
+    .travel_planner_content .prototype_container {
+        padding-inline: 156px;
+    }
+
+    .travel_planner_content .tag {
+        margin-left: 156px;
     }
 }
 

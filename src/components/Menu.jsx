@@ -35,6 +35,7 @@ function Menu({ onClose, onContactClick }) {
       <div className="close_btn" onClick={onClose}>
         <img src="/images/close_icon.png" alt="close button" />
       </div>
+
       <div className="menu_links">
         <Link 
           to="/aboutme" 
@@ -83,6 +84,7 @@ function Menu({ onClose, onContactClick }) {
           <span>t</span>
         </FlipText>
       </div>
+      
       <div className="socials_container" id="menu_socials_container">
         <FlipText 
           as="div" 

@@ -45,7 +45,7 @@ function Projects() {
                         <h2 className="article_title">Projects</h2>
                     </div>
                     
-                <article className="latest_project_container">
+                    <article className="latest_project_container">
                         <div className="latest_project_content">
                             
                             <div className="latest_project_wrap">
@@ -76,7 +76,7 @@ function Projects() {
                         </div>
                     </article>
             
-            </div>
+                </div>
             </div>
             <footer>
                 <Footer />
