@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import { useState } from "react"
 import { useLocation } from "wouter"
 import NavBtn from "../components/NavBtn"
+import Background from "../components/Background"
 
 function AboutMe() {
 
@@ -21,7 +22,7 @@ function AboutMe() {
     return (
         <section className="about_me_page_container">
             <div className="img_bg">
-                <img src="/images/background_img.png" alt="background" />
+                <Background />
             </div>
             <div className="header_bar">
                 <Header onMenuOpen={() => setMenuOpen(true)} />

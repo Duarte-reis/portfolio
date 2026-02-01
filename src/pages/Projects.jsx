@@ -5,6 +5,7 @@ import { Link, useLocation } from "wouter"
 import { useState } from "react"
 import Menu from "../components/Menu"
 import NavBtn from "../components/NavBtn"
+import Background from "../components/Background"
 
 function Projects() {
 
@@ -20,7 +21,7 @@ function Projects() {
     return (
         <section className="projects_container">
             <div className="img_bg">
-                <img src="/images/background_img.png" alt="background" />
+                <Background />
             </div>
             <div className="header_bar">
                 <Header onMenuOpen={() => setMenuOpen(true)} />

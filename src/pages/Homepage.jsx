@@ -10,6 +10,7 @@ import { useRef, useState, useEffect } from "react"
 import FlipText from "../components/FlipText"
 import Colorway from "../components/Colorway"
 import EmailBox from "../components/EmailBox"
+import Background from "../components/Background"
 
 function Homepage() {
     const contactRef = useRef(null)
@@ -38,8 +39,9 @@ function Homepage() {
     return (
         <section className="homepage_container">
             <div className="img_bg">
-                <img src="/images/background_img.png" alt="background" />
+                <Background />
             </div>
+
 
             <div className="header_bar">
                 <Header 
@@ -69,6 +71,7 @@ function Homepage() {
                                 solving problems, turning user pain points into elegant solutions,
                                 through thoughtful design and clean code.”
                                 </p>
+
                             </div>
                             <div className="pages_links">
 

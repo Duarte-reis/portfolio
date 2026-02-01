@@ -7,6 +7,7 @@ import Menu from "../components/Menu"
 import Prototype from "../components/Prototype"
 import { useState, useRef } from "react"
 import { useLocation } from "wouter"
+import Background from "../components/Background"
 
 function TravelPlanner() {
     // State management
@@ -36,7 +37,7 @@ function TravelPlanner() {
     return (
         <section className="travel_planner_container">
             <div className="img_bg">
-                <img src="/images/background_img.png" alt="background" />
+                <Background />
             </div>
 
             <div className="header_bar">
@@ -91,7 +92,7 @@ function TravelPlanner() {
 
                                     <div className="project_btns">
                                         <a
-                                            href="https://github.com/Duarte-reis?tab=respositories"
+                                            href="https://github.com/Duarte-reis/travel_planner.git"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                         >
