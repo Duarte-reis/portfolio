@@ -450,8 +450,6 @@ a {
     text-transform: uppercase;
 }
 
-
-
 /* ---- Tag ---- */
 
 .tag {
@@ -1648,9 +1646,6 @@ textarea {
   gap: 16px;
   padding: 16px;
   border-radius: 10px;
-
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 }
 
 .story_board::before {
@@ -2006,6 +2001,101 @@ textarea {
   background-position: center;
 }
 
+/* ---- Not Found ---- */
+
+.not_found_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.not_found_animation,
+.alien_disc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.alien_disc p {
+    font-size: 96px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #D9CEF3;
+    color: transparent;
+    position: absolute;
+    z-index: -1;
+}
+
+.alien_disc img {
+    width: 50%;
+}
+
+.alien_disc > :first-child {
+    left: 64px;
+}
+
+.alien_disc > :nth-child(3) {
+    right: 72px;
+}
+
+.ufo_beam_container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50vw;
+    height: 50vh;
+    pointer-events: none;
+}
+
+.ufo_beam {
+    position: absolute;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-46%); 
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(40% 0%, 60% 0%, 100% 100%, 0% 100%);
+    background: linear-gradient(to bottom, #D9CEF3, #B8A4E8);
+    z-index: 1;
+    transform-origin: top center;
+    animation: pendulum 4s ease-in-out infinite;
+}
+
+.not_found_message,
+.not_found_countdown {
+    position: absolute;
+}
+
+.not_found_message {
+    min-height: 50vh;
+    max-width: 200px;
+    text-align: center;
+}
+
+.not_found_countdown {
+    bottom: 32px;
+    max-width: 200px;
+    text-align: center;
+}
+
+@keyframes pendulum {
+    0%, 100% {
+        transform: translateX(-46%) rotate(-3deg);
+    }
+    50% {
+        transform: translateX(-46%) rotate(3deg);
+    }
+}
+
+.go_back_btn {
+    position: absolute;
+    bottom: 72px;
+}
 
 @media (min-width: 500px) {
 
@@ -2261,7 +2351,7 @@ textarea {
         height: 32px;
     }
 
-/* ---- Travel Planner ---- */
+    /* ---- Travel Planner ---- */
 
     .travel_planner_container {
         padding: 32px 48px;
@@ -2305,6 +2395,26 @@ textarea {
     .article_title::after {
         width: 5%;
     }
+
+    /* ---- Not Found ---- */
+
+    .alien_disc img {
+        width: 50%;
+    }
+
+    .alien_disc > :first-child {
+        left: 72px;
+    }
+
+    .alien_disc > :nth-child(3) {
+        right: 80px;
+    }
+
+    .ufo_beam_container {
+        left: 50%;
+        width: 28vw;
+    }
+
 }
 
 @media (min-width: 880px) {
@@ -2609,6 +2719,12 @@ textarea {
         margin-top: 296px;
     }
 
+    /* ---- Not Found ---- */
+
+    .ufo_beam_container {
+        width: 25vw;
+    }
+
 @media (min-width: 1024px) {
 
     .nav_menu_container {
@@ -2758,7 +2874,13 @@ textarea {
     .project_content {
         padding-inline: 66px;
     }
- 
+
+    /* ---- Not Found ---- */
+
+    .ufo_beam_container {
+        width: 20vw;
+    }
+    
 }
 
 @media (min-width: 1280px) {
@@ -2813,6 +2935,25 @@ textarea {
 
     .experience_container {
         padding-inline: 148px;
+    }
+
+    /* --- Not Found --- */
+
+    .alien_disc img {
+        width: 50%;
+    }
+
+    .alien_disc > :first-child {
+        left: 72px;
+    }
+
+    .alien_disc > :nth-child(3) {
+        right: 80px;
+    }
+
+    .ufo_beam_container {
+        left: 50%;
+        width: 16vw;
     }
 }
 
@@ -3126,6 +3267,33 @@ textarea {
         margin-block: 48px;
     }
 
+    /* ---- Not Found ---- */
+
+    .alien_disc p {
+        font-size: 180px;
+    }
+
+    .alien_disc img {
+        width: 70%;
+    }
+
+    .alien_disc > :first-child {
+        left: 8px;
+    }
+
+    .alien_disc > :nth-child(3) {
+        right: 16px;
+    }
+
+    .ufo_beam_container {
+        left: 50%;
+        width: 16vw;
+    }
+
+    .not_found_message {
+        max-width: 100%;
+    }
+
 }
 
 @media (min-width: 1728px) {
@@ -3251,6 +3419,7 @@ textarea {
     .travel_planner_container .prototype_container {
         margin-block: 112px;
     }
+
 }
 
 @media (min-width: 1920px) {
@@ -3308,6 +3477,12 @@ textarea {
 
     .travel_planner_container .tag {
         margin-left: 80px;
+    }
+
+    /* ---- Not Found ---- */
+
+    .ufo_beam_container {
+        width: 14vw;
     }
 
 }
@@ -3376,6 +3551,29 @@ textarea {
 
     .travel_planner_content .tag {
         margin-left: 156px;
+    }
+
+    /* ---- Not Found ---- */
+
+    .alien_disc p {
+        font-size: 272px;
+    }
+
+    .alien_disc img {
+        width: 100%;
+    }
+
+    .alien_disc > :first-child {
+        left: -80px;
+    }
+
+    .alien_disc > :nth-child(3) {
+        right: -72px;
+    }
+
+    .ufo_beam_container {
+        left: 50%;
+        width: 16vw;
     }
 }
 
