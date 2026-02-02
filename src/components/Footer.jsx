@@ -1,6 +1,7 @@
 import "../index.css"
 import { Link, useLocation } from "wouter"
 import FlipText from "./FlipText"
+import NavBtn from "./NavBtn"
 
 function Footer() {
 
@@ -111,10 +112,25 @@ function Footer() {
                 </div>
                 <p>duartereisrs@gmail.com</p>
                 <div className="footer_title">
-                    <h1>THINK</h1>
-                    <h1>CREATE</h1>
-                    <h1>LAUNCH</h1>
+                    <div className="footer_text">
+                        <h1>THINK</h1>
+                        <h1>CREATE</h1>
+                        <h1>LAUNCH</h1>
+                    </div>
+
+                    <div className="easter_egg">
+                        <Link 
+                            to="notfound" 
+                            className="link"
+                        >
+                            <NavBtn 
+                                text="Easter egg"
+                            />
+                        </Link>
+                        
+                    </div>
                 </div>
+                
                 <div className="footer_legal">
                     <small>2025.All right reserved. Duarte.</small> 
                 </div>    

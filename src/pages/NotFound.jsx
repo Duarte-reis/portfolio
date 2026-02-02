@@ -4,8 +4,6 @@ import { useRef, useState, useEffect } from "react"
 import Header from "../components/Header"
 import Menu from "../components/Menu"
 import Background from "../components/Background"
-import NavBtn from "../components/NavBtn"
-
 
 
 function NotFound() {
@@ -15,7 +13,7 @@ function NotFound() {
 
     const [menuOpen, setMenuOpen] = useState(false)
     const [location, setLocation] = useLocation();
-    const [countdown, setCountdown] = useState(5);
+    const [countdown, setCountdown] = useState(8);
     
     
     const handleScrollToContact = () => {
